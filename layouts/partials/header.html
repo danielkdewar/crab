@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MDDWP34');</script>
+
     <title>{{ .Title }} - {{ .Site.Title }}</title>
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/crab.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
@@ -21,15 +28,13 @@
       <div id="header">
 
         <div id="site-logo">
-          {{ if isset .Site.Params "logoimage" }}
-            <img src="{{ .Site.BaseURL }}{{ .Site.Params.logoimage }}">
-          {{ else }}
-            <img src="{{ .Site.BaseURL }}img/crab-logo.png">
-          {{ end }}
+
         </div>
 
-	<div id="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
-	<div id="site-slogan">{{ .Site.Params.Description }}</div>
+	<div id="site-title"><a href="http://daniel-dewar.com/"><img class="slogo" src="http://daniel-dewar.com/img/logo-daniel-dewar-72-01.png"></a></div>
+	<div id="site-slogan"><h1>Daniel Dewar — Founder. Sound designer. Writer.</h1></div>
+
+      
 
       </div>
 
